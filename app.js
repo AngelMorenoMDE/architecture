@@ -18,7 +18,8 @@ app.use(session({
 var sess;
 app.get('/',function(req,res){
 
-  res.send("Request id: " + JSON.stringify(req.query));
+  var result = {"id":req.query.id};
+  res.send(result);
 
 });
 app.post('/',function(req,res){

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/front/app.js"></script>
+<script src="/front/controller.js"></script>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+<input type="text" ng-model="request" ng-change="find()"/>
+<h1>{{request}}</h1>
+<p>Today's welcome message is:</p>
+<h1>{{myWelcome}}</h1>
+<div ng-app="myApp" ng-controller="myCtrlChild">
+
+<p>Result is:</p>
+<h1>{{result}}</h1>
+
+</div>
+</div>
+
+</body>
+</html>
